@@ -6,11 +6,14 @@ import { motion } from 'framer-motion';
 import { HomePage } from './Screens/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import { About } from './Screens/About';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <section>Nav</section>
+    <div>
+      <section>
+        <NavBar />
+      </section>
       <section>Parallax</section>
       <section>Something</section>
       <section>Projects</section>
@@ -20,7 +23,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />
       </Routes> */}
-    </ThemeProvider>
+    </div>
   );
 }
 

@@ -3,11 +3,22 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: lightgray;
+}
+
 section {
   height: 100vh;
   // following code when you scroll we end up on
   // that section
   scroll-snap-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
