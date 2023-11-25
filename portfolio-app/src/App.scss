@@ -1,0 +1,16 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  // following code when you scroll we end up on
+  // that section
+  scroll-snap-align: center;
+}
+
+body {
+  background-color: #111827;
+  font-family: 'Montserrat', sans-serif;
+}
