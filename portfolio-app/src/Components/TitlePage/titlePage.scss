@@ -9,6 +9,10 @@
     height: 100%;
     margin: auto;
 
+    @media (min-width: 768px) {
+      margin-top: 10vh;
+    }
+
     .textContainer {
       height: 100%;
       display: flex;
@@ -45,6 +49,14 @@
 
     img {
       width: 64px;
+    }
+
+    .slidingTextContainer {
+      position: absolute;
+      font-size: 15vh;
+      bottom: 20vh;
+      white-space: nowrap;
+      color: #ffffff09;
     }
   }
 
