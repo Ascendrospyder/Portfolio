@@ -3,13 +3,21 @@ import './navBar.scss';
 import discordLogo from '../NavBar/images/discord-logo.png';
 import linkedinLogo from '../NavBar/images/linkedin-logo.png';
 import githubLogo from '../NavBar/images/github-logo.png';
+import { motion } from 'framer-motion';
 
 const NavBar = () => {
   return (
     <div className='nav-bar'>
       {/* Side bar */}
       <div className='wrapper'>
-        <span className='nav-name'>Arindam.Dev</span>
+        <motion.span
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className='nav-name'
+        >
+          Arindam.Dev
+        </motion.span>
         <div className='social'>
           <a href='https://www.linkedin.com/in/arindam-mukherjee-3b9477249/'>
             <img src={linkedinLogo} alt='Linkedin logo' />

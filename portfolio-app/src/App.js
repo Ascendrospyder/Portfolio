@@ -7,12 +7,14 @@ import { HomePage } from './Screens/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import { About } from './Screens/About';
 import NavBar from './Components/NavBar/NavBar';
+import TitlePage from './Components/TitlePage/TitlePage';
 
 function App() {
   return (
     <div>
       <section>
         <NavBar />
+        <TitlePage />
       </section>
       <section>Parallax</section>
       <section>Something</section>
