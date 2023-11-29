@@ -61,7 +61,7 @@ const TitlePage = () => {
             </motion.h2>
             <h1>
               <span style={terminalGreen}>&lt;</span>
-              <span> Student Software Engineer </span>
+              <span> Student Software Engineer at UNSW 😊 </span>
               <span style={terminalGreen}>&#47;&gt;</span>
             </h1>
             <div className='buttons'>
@@ -93,13 +93,13 @@ const TitlePage = () => {
               x: ['100%', '-100%'],
             }}
             transition={{
-              duration: 10,
+              duration: 15,
               ease: 'linear',
               repeat: Infinity,
-              repeatType: 'loop',
+              repeatType: 'mirror',
             }}
           >
-            I like video games! music! programming! {/* Your sliding text */}
+            I like video games! music! programming!
           </motion.div>
         </div>
       </div>
