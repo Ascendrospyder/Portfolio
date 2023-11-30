@@ -1,0 +1,15 @@
+.custom-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  color: black;
+  font-weight: 1000;
+  margin-left: 10px;
+}

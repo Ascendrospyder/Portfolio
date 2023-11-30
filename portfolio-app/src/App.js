@@ -9,10 +9,12 @@ import { About } from './Screens/About';
 import NavBar from './Components/NavBar/NavBar';
 import TitlePage from './Components/TitlePage/TitlePage';
 import Parallax from './Components/Parallax/Parallax';
+import Sidebar from './Components/Sidebar/Sidebar';
+import Skills from './Components/Skills/Skills';
 
 function App() {
   return (
-    <div>
+    <div id='outer-div'>
       <section>
         <NavBar />
         <TitlePage />
@@ -20,7 +22,7 @@ function App() {
       <section>
         <Parallax />
       </section>
-      <section>Something</section>
+      <section><Skills /></section>
       <section>Projects</section>
       <section>Contact</section>
 

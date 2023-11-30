@@ -9,6 +9,16 @@ html {
   color: lightgray;
 }
 
+#outer-container {
+  display: flex; // use flexbox to align the sidebar and the main content
+}
+
+@media (max-width: 768px) {
+  #outer-container {
+    flex-direction: column; // stack the sidebar and the main content vertically on small screens
+  }
+}
+
 section {
   height: 100vh;
   // following code when you scroll we end up on
