@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
   }
 
   .planets {
@@ -30,11 +30,21 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
   }
 
   .stars {
     background-image: url(./images/stars.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .nebula {
+    background-image: url(./images/nebula.png);
     background-size: cover;
     background-position: bottom;
     width: 100%;

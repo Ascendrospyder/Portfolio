@@ -20,10 +20,17 @@ function App() {
         <TitlePage />
       </section>
       <section>
-        <Parallax />
+        <Parallax text='Skills?' type="Skills" />
       </section>
-      <section><Skills /></section>
-      <section>Projects</section>
+      <section>
+        <Skills />
+      </section>
+      <section>
+        <Parallax text='Projects' type="Projects" />
+      </section>
+      <section>
+        Projects
+      </section>
       <section>Contact</section>
 
       {/* <Routes>

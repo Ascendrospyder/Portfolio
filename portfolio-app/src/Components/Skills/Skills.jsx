@@ -8,6 +8,8 @@ import PythonLogo from '../Skills/images/py-logo.png'
 import PostgresLogo from '../Skills/images/postgres-logo.png'
 import ReactLogo from '../Skills/images/react-logo.png'
 import ReactNativeLogo from '../Skills/images/react-native-logo.png'
+import GitLogo from '../Skills/images/git-logo.png'
+import UIUXLogo from '../Skills/images/ui-ux-logo.jpg'
 
 const Skills = () => {
  return (
@@ -20,6 +22,8 @@ const Skills = () => {
     <SkillCard image={PostgresLogo} title="PostgreSQl" />
     <SkillCard image={ReactLogo} title="ReactJS" />
     <SkillCard image={ReactNativeLogo} title="React Native" />
+    <SkillCard image={GitLogo} title="Git" />
+    <SkillCard image={UIUXLogo} title="UI/UX Design" />
   </div>
  )
 }
