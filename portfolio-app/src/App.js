@@ -12,6 +12,7 @@ import Parallax from './Components/Parallax/Parallax';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
       <section>
         <Projects />
       </section>
-      <section>Contact</section>
+      <section>
+        <Contact />
+      </section>
 
       {/* <Routes>
         <Route path='/' element={<HomePage />} />
