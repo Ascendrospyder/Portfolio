@@ -11,6 +11,7 @@ import TitlePage from './Components/TitlePage/TitlePage';
 import Parallax from './Components/Parallax/Parallax';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Skills from './Components/Skills/Skills';
+import Projects from './Components/Projects/Projects';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         <Parallax text='Projects' type="Projects" />
       </section>
       <section>
-        Projects
+        <Projects />
       </section>
       <section>Contact</section>
 
