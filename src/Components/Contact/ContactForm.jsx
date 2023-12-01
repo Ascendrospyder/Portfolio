@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
-import { Container, Grid, TextField, Button, Paper } from '@mui/material';
+import {
+  Container,
+  Grid,
+  TextField,
+  Button,
+  Paper,
+  Typography,
+} from '@mui/material';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -82,6 +91,9 @@ const ContactForm = () => {
           bgcolor: 'common.white',
         }}
       >
+        <Typography variant='h4' gutterBottom sx={{ color: 'black', fontWeight: 700}}>
+          Like what you see? Send me a message!
+        </Typography>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12}>

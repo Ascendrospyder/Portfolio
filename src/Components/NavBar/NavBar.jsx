@@ -14,27 +14,18 @@ const NavBar = () => {
     <div className='nav-bar'>
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className='wrapper'>
-        <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className='nav-name'
-        >
+        <span className='nav-name'>
           Arindam.Dev
-        </motion.span>
+        </span>
         <div className='social'>
-          <a href='https://www.linkedin.com/in/arindam-mukherjee-3b9477249/'>
+          <a href='https://www.linkedin.com/in/arindam-mukherjee-3b9477249/' target="_blank" rel="noopener noreferrer">
             <img src={linkedinLogo} alt='Linkedin logo' />
           </a>
-          <a href='http://discordapp.com/users/713166366005264534'>
-            <img
-              src={discordLogo}
-              alt='Discord Logo'
-              className='discord-logo'
-            ></img>
+          <a href='http://discordapp.com/users/713166366005264534' target="_blank" rel="noopener noreferrer">
+            <img src={discordLogo} alt='Discord Logo' className='discord-logo' />
           </a>
-          <a href='https://github.com/Ascendrospyder'>
-            <img src={githubLogo} alt='Github Logo'></img>
+          <a href='https://github.com/Ascendrospyder' target="_blank" rel="noopener noreferrer">
+            <img src={githubLogo} alt='Github Logo' />
           </a>
         </div>
       </div>

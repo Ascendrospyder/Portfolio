@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import ListIcon from '@mui/icons-material/List';
 import CloseIcon from '@mui/icons-material/Close';
 import './sidebar.scss';
 import { motion } from 'framer-motion';
+import Link from '@mui/material/Link';
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
-  const sections = ['Home', 'What I do', 'Projects', 'Contact'];
+  const sections = ['Home', 'Skills', 'Projects', 'Contact'];
 
   const sidebarVariants = {
     open: {
@@ -40,17 +40,13 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <CloseIcon sx={{ '& path': { fill: 'black' }, fontSize: '2em' }} />
           </div>
           {sections.map((section, index) => (
-            <Link
+            <a
               key={index}
+              href={`#${section.toLowerCase()}`}
               className='sidebar-link'
-              to={section.toLowerCase()}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
             >
               {section}
-            </Link>
+            </a>
           ))}
         </motion.div>
       )}
