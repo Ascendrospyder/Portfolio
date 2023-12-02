@@ -42,6 +42,11 @@ const TitlePage = () => {
     color: '#00FF00',
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className='title'>
       <div className='wrapper'>
@@ -69,6 +74,7 @@ const TitlePage = () => {
                 whileHover='hover'
                 whileTap='tap'
                 variants={buttonVariants}
+                onClick={scrollToContact}
               >
                 Contact Me!
               </motion.button>

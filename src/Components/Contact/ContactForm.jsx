@@ -9,8 +9,7 @@ import {
 } from '@mui/material';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Snackbar from '@mui/material/Snackbar';
-import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle';
+import { Spinner, Text } from '@chakra-ui/react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +19,7 @@ const ContactForm = () => {
   });
   const [emailError, setEmailError] = useState(false);
   const [confirmationOpen, setConfirmationOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,6 +28,8 @@ const ContactForm = () => {
       setEmailError(true);
       return;
     }
+
+    setIsLoading(true);
 
     try {
       const response = await fetch('http://localhost:3001/send-email', {
@@ -46,6 +48,8 @@ const ContactForm = () => {
     } catch (e) {
       console.error('Error submitting form:', e);
     }
+
+    setIsLoading(false);
   };
 
   const handleInputChange = (e) => {
@@ -91,7 +95,11 @@ const ContactForm = () => {
           bgcolor: 'common.white',
         }}
       >
-        <Typography variant='h4' gutterBottom sx={{ color: 'black', fontWeight: 700}}>
+        <Typography
+          variant='h4'
+          gutterBottom
+          sx={{ color: 'black', fontWeight: 700 }}
+        >
           Like what you see? Send me a message!
         </Typography>
         <form onSubmit={handleSubmit}>
@@ -155,23 +163,33 @@ const ContactForm = () => {
               />
             </Grid>
             <Grid item xs={12}>
-              <Button
-                variant='contained'
-                sx={{
-                  width: '100%',
-                  bgcolor: '#111827',
-                  color: 'common.white',
-                  '&:hover': {
-                    bgcolor: 'common.white',
-                    color: '#111827',
-                  },
-                }}
-                size='large'
-                type='submit'
-              >
-                Send Message{' '}
-                <MailOutlineIcon fontSize='small' sx={{ marginLeft: '5px' }} />
-              </Button>
+              {isLoading ? (
+                <div>
+                  <Spinner size="xl" boxSize="50px" thickness='4px' color='#c749c1' />
+                  <Text sx={{ color: '#c749c1'}}>Standby: Message is sending...</Text>
+                </div>
+              ) : (
+                <Button
+                  variant='contained'
+                  sx={{
+                    width: '100%',
+                    bgcolor: '#111827',
+                    color: 'common.white',
+                    '&:hover': {
+                      bgcolor: 'common.white',
+                      color: '#111827',
+                    },
+                  }}
+                  size='large'
+                  type='submit'
+                >
+                  Send Message
+                  <MailOutlineIcon
+                    fontSize='small'
+                    sx={{ marginLeft: '5px' }}
+                  />
+                </Button>
+              )}
             </Grid>
           </Grid>
         </form>

@@ -6,14 +6,16 @@ import githubLogo from '../NavBar/images/github-logo.png';
 import { motion } from 'framer-motion';
 import Sidebar from '../Sidebar/Sidebar';
 import { useState } from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const isMobileDevice = useMediaQuery('(max-width:600px)')
   return (
     <div className='nav-bar'>
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className='wrapper'>
+      {!isMobileDevice ? (
+        <div className='wrapper'>
         <span className='nav-name'>
           Arindam.Dev
         </span>
@@ -29,6 +31,7 @@ const NavBar = () => {
           </a>
         </div>
       </div>
+      ) : null}
     </div>
   );
 };
