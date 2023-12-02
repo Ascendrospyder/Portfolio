@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+Portfolio Website
+=================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a personal portfolio website showcasing my skills, experiences, and projects. It's built using a combination of ReactJS, Node.JS, Chakra.UI, MUI, and SCSS.
 
-## Available Scripts
+Getting Started
+---------------
 
-In the project directory, you can run:
+To get a local copy up and running, follow these steps:
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   Node.js and npm installed on your machine. If not, you can download and install them from the [official Node.js website](https://nodejs.org/).
+-   Basic understanding of ReactJS, Node.JS, Chakra.UI, MUI, and SCSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installing
 
-### `npm test`
+1.  Clone the repository to your local machine using the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* `git clone https://github.com/Ascendrospyder/Portfolio.git`
 
-### `npm run build`
+2.  Navigate into the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `cd Portfolio`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.  Install the necessary dependencies for the frontend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `npm install`
 
-### `npm run eject`
+Running the Application
+-----------------------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To start the application in development mode without any magic from the backend, use the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This will start the application and open it in your default browser at `http://localhost:3000`. The page will reload if you make edits. You may also see any lint errors in the console.
 
-## Learn More
+Running the Backend
+-------------------
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The backend of the application is separate and needs to be started separately to use the contact form. Navigate to the backend directory, install the necessary packages, and run the server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. `cd backend `
+2. `npm install`
+3. `cd src`
+4. `node index.js`
 
-### Code Splitting
+Technologies Used
+-----------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-   [ReactJS](https://react.dev/): A JavaScript library for building user interfaces. It allows developers to create large web applications that can change data, without reloading the page.
+-   [Node.JS](https://nodejs.org/en): A JavaScript runtime built on Chrome's V8 JavaScript engine. It's used to run JavaScript on the server side.
+-   [Chakra.UI](https://chakra-ui.com/): A simple, modular, and accessible component library that gives you the building blocks you need to build your React applications .
+-   [MUI](https://mui.com/): A popular Material Design framework for React. It provides a set of React components that implement Google's Material Design.
+-   [SCSS](https://sass-lang.com/): A preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). It's used to describe the look and formatting of a document written in HTML.
+-   [Framer Motion](https://www.framer.com/motion/): A production-ready motion library for React. It's used to create animations and transitions in the application
 
-### Analyzing the Bundle Size
+Contributions
+---------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-   Please provide some feedback whenever you can on how I can improve my website or overall frontend skills.
 
-### Making a Progressive Web App
+Contact
+-------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you want to contact me you can reach me at <spyderascendro@gmail.com>.

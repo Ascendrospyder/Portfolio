@@ -165,8 +165,15 @@ const ContactForm = () => {
             <Grid item xs={12}>
               {isLoading ? (
                 <div>
-                  <Spinner size="xl" boxSize="50px" thickness='4px' color='#c749c1' />
-                  <Text sx={{ color: '#c749c1'}}>Standby: Message is sending...</Text>
+                  <Spinner
+                    size='xl'
+                    boxSize='50px'
+                    thickness='4px'
+                    color='#c749c1'
+                  />
+                  <Text sx={{ color: '#c749c1' }}>
+                    Standby: Message is sending...
+                  </Text>
                 </div>
               ) : (
                 <Button

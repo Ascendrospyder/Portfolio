@@ -14,13 +14,13 @@ function App() {
         <TitlePage />
       </section>
       <section id='skills'>
-        <Parallax text='Skills?' type="Skills" />
+        <Parallax text='Skills?' type='Skills' />
       </section>
       <section>
         <Skills />
       </section>
       <section id='projects'>
-        <Parallax text='Projects' type="Projects" />
+        <Parallax text='Projects' type='Projects' />
       </section>
       <section>
         <Projects />
