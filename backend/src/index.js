@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../.env' });
+require('dotenv').config({ path: '.env' });
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -19,6 +19,8 @@ app.post('/send-email', async (req, res) => {
       pass: process.env.GMAIL_APP_PASS,
     },
   });
+
+  console.log(process.env.GMAIL_USER, process.env.GMAIL_APP_PASS)
 
   let mailOptions = {
     from: process.env.GMAIL_USER,
