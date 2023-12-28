@@ -3,7 +3,6 @@ import ListIcon from '@mui/icons-material/List';
 import CloseIcon from '@mui/icons-material/Close';
 import './sidebar.scss';
 import { motion } from 'framer-motion';
-import Link from '@mui/material/Link';
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   const sections = ['Home', 'Skills', 'Projects', 'Contact'];
