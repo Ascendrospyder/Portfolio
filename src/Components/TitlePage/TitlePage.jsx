@@ -109,12 +109,14 @@ const TitlePage = () => {
                 Bored? Click me for a surprise!
               </motion.button>
             </div>
-            <motion.img
-              variants={textVariants}
-              animate='scrollButton'
-              src={scrollDownIcon}
-              alt='scroll down button'
-            />
+            <div className='scrollDownIconContainer'>
+              <motion.img
+                variants={textVariants}
+                animate='scrollButton'
+                src={scrollDownIcon}
+                alt='scroll down button'
+              />
+            </div>
           </motion.div>
           <motion.div
             className='slidingTextContainer'
@@ -138,7 +140,7 @@ const TitlePage = () => {
         sx={{ borderRadius: '10%' }}
       >
         <DialogTitle sx={{ color: 'black' }}>
-          You recieved wholesome memes 😊 
+          You recieved wholesome memes 😊
         </DialogTitle>
         <DialogContent style={{ backgroundColor: '#FFFFFF' }}>
           {meme && <img src={meme} alt='Meme' style={{ maxWidth: '100%' }} />}

@@ -19,6 +19,13 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+      margin-left: 25px;
+    }
+
+    .scrollDownIconContainer {
+      width: 100%;
+      display: flex;
+      // justify-content: center;
     }
 
     h2 {
@@ -57,6 +64,38 @@
       bottom: 10vh;
       white-space: nowrap;
       color: #ffffff09;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      .textContainer {
+        margin-top: 10%;
+
+        h2 {
+          text-align: center;
+          font-size: 2rem;
+        }
+
+        h1 {
+          text-align: center;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center; 
+      margin-top: 20px;
+
+      button {
+        margin-right: 10px;
+      }
+    }
+
+    .scrollDownIconContainer {
+      display: flex;
+      justify-content: center;
     }
   }
 
