@@ -9,7 +9,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
   const sidebarVariants = {
     open: {
-      width: '30vw',
+      width: '45vw',
       x: 0,
       opacity: 1,
     },
