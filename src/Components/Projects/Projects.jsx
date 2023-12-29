@@ -5,12 +5,27 @@ import StudySphereHeader from './images/study-sphere.png';
 import FileOrganiserHeader from './images/file-organiser.png';
 import TeamsCloneHeader from './images/teams-clone.png';
 import BlackoutHeader from './images/blackout.png';
+import BuildrHeader from './images/buildr-thumbnail.png';
 
 const Projects = () => {
   return (
     <div className='project-container'>
       <div className='scrollable-wrapper'>
         <div className='card-wrapper'>
+          <ProjectCard
+            image={BuildrHeader}
+            title='Buildr'
+            description='This FullStack form builder application is developed using Next.js, ReactJS, TypeScript, Dnd-Kit, PostgreSQL, Prisma, Tailwind CSS, and Clerk for authentication. It allows users to dynamically create, customise, manage and share forms efficiently.'
+            projectLink='https://github.com/Ascendrospyder/Buildr'
+            languages={[
+              'Next.JS',
+              'ReactJS',
+              'TypeScript',
+              'PostgreSQL',
+              'TailwindCSS',
+              'Prisma',
+            ]}
+          />
           <ProjectCard
             image={StudySphereHeader}
             title='Study Sphere'

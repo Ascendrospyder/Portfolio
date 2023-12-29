@@ -7,9 +7,8 @@
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1200px;
-  justify-content: space-around;
+  gap: 30px;
+  justify-content: center;
 }
 
 .scrollable-wrapper {
@@ -30,3 +29,64 @@
     align-items: center;
   }
 }
+
+.project-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.project-image {
+  max-width: 500px;
+  max-height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  margin-top: 8px;
+}
+
+.project-description {
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+
+.read-more-button {
+  border: none;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.languages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.language-badge {
+  border: 1px solid #007bff;
+  color: lightblue;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 4px;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.project-link-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+

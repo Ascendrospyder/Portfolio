@@ -13,93 +13,33 @@ const ProjectCard = ({ title, description, image, projectLink, languages }) => {
   };
 
   return (
-    <div
-      style={{
-        width: '300px',
-        border: '1px solid #ccc',
-        borderRadius: '8px',
-        padding: '16px',
-      }}
-    >
-      <img
-        src={image}
-        alt='Card'
-        style={{
-          maxWidth: '500px',
-          maxHeight: '100px',
-          width: '100%',
-          height: 'auto',
-        }}
-      />
-      <h2 style={{ marginTop: '8px' }}>{title}</h2>
-      <hr style={{ margin: '8px 0' }} />
-      <p style={{ fontSize: '1rem', whiteSpace: 'pre-wrap' }}>
-        {showFullDescription ? description : `${description.substring(0, 100)}...`}
+    <div className='project-card'>
+      <img src={image} alt='Card' className='project-image' />
+      <h2 className='project-title'>{title}</h2>
+      <hr />
+      <p className='project-description'>
+        {showFullDescription
+          ? description
+          : `${description.substring(0, 100)}...`}
         {!showFullDescription && (
-          <button
-            onClick={toggleDescription}
-            style={{
-              border: 'none',
-              backgroundColor: 'transparent',
-              color: '#007bff',
-              cursor: 'pointer',
-            }}
-          >
+          <button className='read-more-button' onClick={toggleDescription}>
             Read more
           </button>
         )}
       </p>
       {showFullDescription && (
-        <button
-          onClick={toggleDescription}
-          style={{
-            border: 'none',
-            backgroundColor: 'transparent',
-            color: '#007bff',
-            cursor: 'pointer',
-          }}
-        >
+        <button className='read-more-button' onClick={toggleDescription}>
           Show less
         </button>
       )}
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          marginTop: '8px',
-        }}
-      >
+      <div className='languages-container'>
         {languages.map((language, index) => (
-          <div
-            key={index}
-            style={{
-              border: '1px solid #007bff',
-              color: 'lightblue',
-              borderRadius: '4px',
-              padding: '4px 8px',
-              marginRight: '4px',
-              display: 'inline-block',
-              fontSize: '0.8rem',
-            }}
-          >
+          <div key={index} className='language-badge'>
             {language}
           </div>
         ))}
       </div>
-      <button
-        onClick={handleProjectLinkClick}
-        style={{
-          marginTop: '20px',
-          padding: '8px 16px',
-          borderRadius: '4px',
-          backgroundColor: '#007bff',
-          color: 'white',
-          border: 'none',
-          fontSize: '1rem',
-          cursor: 'pointer',
-          transition: 'background-color 0.3s ease-in-out',
-        }}
-      >
+      <button className='project-link-button' onClick={handleProjectLinkClick}>
         View Project
       </button>
     </div>

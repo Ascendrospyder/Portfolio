@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ListIcon from '@mui/icons-material/List';
 import CloseIcon from '@mui/icons-material/Close';
 import './sidebar.scss';
@@ -6,10 +6,30 @@ import { motion } from 'framer-motion';
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   const sections = ['Home', 'Skills', 'Projects', 'Contact'];
+  const [sidebarWidth, setSidebarWidth] = useState('30vw');
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 900) {
+        setSidebarWidth('25vw');
+      } else {
+        setSidebarWidth('50vw');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    
+    handleResize();
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const sidebarVariants = {
     open: {
-      width: '45vw',
+      width: sidebarWidth,
       x: 0,
       opacity: 1,
     },
