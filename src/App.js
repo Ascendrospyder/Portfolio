@@ -5,8 +5,10 @@ import Parallax from './Components/Parallax/Parallax';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
+import { inject } from '@vercel/analytics';
 
 function App() {
+  inject();
   return (
     <div id='outer-div'>
       <section id='home'>
